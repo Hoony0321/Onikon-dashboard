@@ -129,7 +129,7 @@ const EventCard = ({event}: EventCardProps) => {
         <SpaceBox height="20px" />
 
 
-        <BaseLink href={`/events/${event.id}`}>
+        <BaseLink href={`/reservations`}>
             <Flex flexDirection="row" alignItems="center" justifyContent="center" padding="10px 20px" backgroundColor="black" borderRadius="10px" width="100%">
                 <Text fontSize="12px" fontWeight="bold" color="white">View Details</Text>
             </Flex>

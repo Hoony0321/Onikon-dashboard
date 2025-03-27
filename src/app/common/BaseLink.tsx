@@ -1,7 +1,5 @@
 "use client";
-
 import { Link } from "@chakra-ui/react";
-import { useParams } from "next/navigation";
 
 const BaseLink = ({
   href,
@@ -16,12 +14,9 @@ const BaseLink = ({
   color?: string;
   style?: React.CSSProperties;
 }) => {
-  const params = useParams();
-  const locale = params.locale || "en"; // 기본값 영어
-
   return (
     <Link
-      href={isExternal ? href : `/${locale}${href}`}
+      href={href}
       outline="none"
       textDecoration="none"
       cursor="pointer"

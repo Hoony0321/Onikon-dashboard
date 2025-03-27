@@ -4,7 +4,7 @@ import SpaceBox from "@/src/app/common/SpaceBox";
 const StatsBox = () => {
     return (
         <Flex flexDirection="column">
-            <Text fontSize="36px" fontWeight="bold">Reservation</Text>
+            <Text fontSize="36px" fontWeight="bold">Dashboard</Text>
             <SpaceBox height="20px" />
             <Flex flexDirection="row" gap="20px">
                 <StatsCard title="New Reservations" value={60} />
