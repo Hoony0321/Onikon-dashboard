@@ -14,7 +14,7 @@ export default function RootLayout({
     <html suppressHydrationWarning className={inter.className}>
         <body>
         <Provider>
-          <div style={{ width: "100%" }}>
+          <div style={{ width: "100%", backgroundColor: "#E9E9E9" }}>
             <div style={{padding: "20px"}}>
                 {children}
             </div>
