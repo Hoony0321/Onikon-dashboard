@@ -1,9 +1,9 @@
+import { Reservation } from "@/src/app/types/Reservation";
 import { Button, Flex, TableBody, TableCell, TableColumnHeader, TableHeader, TableRoot, TableRow } from "@chakra-ui/react"
-import { dummy_reservation_data } from "@/src/constants"
 import { FaEdit } from "react-icons/fa";
 
-const ReservationTable = () => {
-    const reservations = dummy_reservation_data.reservations;
+
+const ReservationTable = ({reservations}: {reservations: Reservation[]}) => {
 
     return (
         <Flex>

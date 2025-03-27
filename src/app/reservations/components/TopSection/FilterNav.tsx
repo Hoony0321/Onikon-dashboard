@@ -1,5 +1,3 @@
-'use client'
-import { useState } from "react";
 import SpaceBox from "../../../common/SpaceBox";
 import { Flex, Text, Box } from "@chakra-ui/react";
 import AddFunction from "./AddFunction";
@@ -13,8 +11,7 @@ const FilterButton = ({text, checked, onClick}: {text: string, checked: boolean,
     )
 }
 
-const FilterNav = () => {
-    const [selectedFilter, setSelectedFilter] = useState("All");
+const FilterNav = ({selectedFilter, setSelectedFilter}: {selectedFilter: string, setSelectedFilter: (filter: string) => void}) => {
     return (
         <Flex flexDirection="column">
             <Text fontSize="36px" fontWeight="bold">Reservations</Text>

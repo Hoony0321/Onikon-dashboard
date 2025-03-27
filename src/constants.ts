@@ -1182,9 +1182,43 @@ export const dummy_reservation_data = {
   event: "Event 2",
   date: "2024-01-01",
   status: "Pending",
-}
-
-
+},
+{
+  id: "31",
+  name: "Jane Doe",
+  email: "jane.doe@example.com",
+  phone: "010-1234-5678",
+  event: "Event 2",
+  date: "2024-01-01",
+  status: "New",
+},
+{
+  id: "32",
+  name: "Jane Doe",
+  email: "jane.doe@example.com",
+  phone: "010-1234-5678",
+  event: "Event 2",
+  date: "2024-01-01",
+  status: "Confirmed",
+},
+{
+  id: "33",
+  name: "Jane Doe",
+  email: "jane.doe@example.com",
+  phone: "010-1234-5678",
+  event: "Event 2",
+  date: "2024-01-01",
+  status: "Completed",
+},
+{
+  id: "34",
+  name: "Jane Doe",
+  email: "jane.doe@example.com",
+  phone: "010-1234-5678",
+  event: "Event 2",
+  date: "2024-01-01",
+  status: "Requested Change",
+},
 
         
     ]
