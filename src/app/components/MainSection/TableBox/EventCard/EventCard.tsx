@@ -1,6 +1,6 @@
 import SpaceBox from "@/src/app/common/SpaceBox";
 import { EventStatus, EventStatusBackgroundColorMap, EventStatusColorMap } from "@/src/app/types/Event";
-import { Box, Circle, Flex, Input, Text } from "@chakra-ui/react";
+import { Box, Circle, Flex, Text, Textarea } from "@chakra-ui/react";
 import { MdPerson } from "react-icons/md";
 import { Event } from "@/src/app/types/Event";
 import BaseLink from "@/src/app/common/BaseLink";
@@ -124,7 +124,15 @@ const EventCard = ({event}: EventCardProps) => {
 
         {/* 메모 내역 */}
         
-        <Input fontSize="12px" fontWeight="bold" placeholder="Memo" width="100%" h="150px"/>
+        <Textarea
+        fontSize="12px"
+        fontWeight="bold"
+        placeholder="Memo"
+        width="100%"
+        height="150px"
+        resize="none"
+        overflowY="auto"
+        />
 
         <SpaceBox height="20px" />
 
